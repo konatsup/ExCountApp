@@ -35,7 +35,12 @@ class MainActivity : AppCompatActivity() {
 
     fun updateText(resultNumber: Int) {
         numberTextView.text = resultNumber.toString()
-        keywordTextView.text = keywords[resultNumber]
+
+        if (resultNumber >= 0 && resultNumber < keywords.size) {
+            keywordTextView.text = keywords[resultNumber]
+        } else {
+            keywordTextView.text = "その番号のキーワードは存在しません"
+        }
 
         when {
             resultNumber % 15 == 0 -> numberTextView.setTextColor(Color.RED)
