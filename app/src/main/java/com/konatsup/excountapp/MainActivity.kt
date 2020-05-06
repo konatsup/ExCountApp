@@ -1,5 +1,6 @@
 package com.konatsup.excountapp
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,16 +17,34 @@ class MainActivity : AppCompatActivity() {
         plusButton.setOnClickListener {
             number += 1
             numberTextView.text = number.toString()
+
+            if (number % 3 == 0) {
+                numberTextView.setTextColor(Color.GREEN)
+            } else {
+                numberTextView.setTextColor(Color.BLACK)
+            }
         }
 
         minusButton.setOnClickListener {
             number -= 1
             numberTextView.text = number.toString()
+
+            if (number % 3 == 0) {
+                numberTextView.setTextColor(Color.GREEN)
+            } else {
+                numberTextView.setTextColor(Color.BLACK)
+            }
         }
 
         clearButton.setOnClickListener {
             number = 0
             numberTextView.text = number.toString()
+
+            if (number % 3 == 0) {
+                numberTextView.setTextColor(Color.GREEN)
+            } else {
+                numberTextView.setTextColor(Color.BLACK)
+            }
         }
 
     }
