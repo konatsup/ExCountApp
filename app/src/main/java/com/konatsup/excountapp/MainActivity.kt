@@ -33,12 +33,10 @@ class MainActivity : AppCompatActivity() {
     fun updateText(resultNumber: Int) {
         numberTextView.text = resultNumber.toString()
 
-        if (resultNumber % 3 == 0) {
-            numberTextView.setTextColor(Color.GREEN)
-        } else if (resultNumber % 5 == 0) {
-            numberTextView.setTextColor(Color.BLUE)
-        } else {
-            numberTextView.setTextColor(Color.BLACK)
+        when {
+            resultNumber % 3 == 0 -> numberTextView.setTextColor(Color.GREEN)
+            resultNumber % 5 == 0 -> numberTextView.setTextColor(Color.BLUE)
+            else -> numberTextView.setTextColor(Color.BLACK)
         }
     }
 
