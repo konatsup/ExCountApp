@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity() {
 
         if (resultNumber % 3 == 0) {
             numberTextView.setTextColor(Color.GREEN)
+        } else if (resultNumber % 5 == 0) {
+            numberTextView.setTextColor(Color.BLUE)
         } else {
             numberTextView.setTextColor(Color.BLACK)
         }
