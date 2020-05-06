@@ -16,36 +16,28 @@ class MainActivity : AppCompatActivity() {
 
         plusButton.setOnClickListener {
             number += 1
-            numberTextView.text = number.toString()
-
-            if (number % 3 == 0) {
-                numberTextView.setTextColor(Color.GREEN)
-            } else {
-                numberTextView.setTextColor(Color.BLACK)
-            }
+            updateText(number)
         }
 
         minusButton.setOnClickListener {
             number -= 1
-            numberTextView.text = number.toString()
-
-            if (number % 3 == 0) {
-                numberTextView.setTextColor(Color.GREEN)
-            } else {
-                numberTextView.setTextColor(Color.BLACK)
-            }
+            updateText(number)
         }
 
         clearButton.setOnClickListener {
             number = 0
-            numberTextView.text = number.toString()
-
-            if (number % 3 == 0) {
-                numberTextView.setTextColor(Color.GREEN)
-            } else {
-                numberTextView.setTextColor(Color.BLACK)
-            }
+            updateText(number)
         }
-
     }
+
+    fun updateText(resultNumber: Int) {
+        numberTextView.text = resultNumber.toString()
+
+        if (resultNumber % 3 == 0) {
+            numberTextView.setTextColor(Color.GREEN)
+        } else {
+            numberTextView.setTextColor(Color.BLACK)
+        }
+    }
+
 }
