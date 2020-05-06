@@ -23,5 +23,10 @@ class MainActivity : AppCompatActivity() {
             numberTextView.text = number.toString()
         }
 
+        clearButton.setOnClickListener {
+            number = 0
+            numberTextView.text = number.toString()
+        }
+
     }
 }
