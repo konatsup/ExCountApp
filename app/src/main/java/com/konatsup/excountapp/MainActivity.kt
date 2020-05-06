@@ -7,12 +7,15 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    var keywords: List<String> = listOf("apple", "banana", "cat", "dog")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         var number: Int = 0
         numberTextView.text = "0"
+        keywordTextView.text = keywords[number]
 
         plusButton.setOnClickListener {
             number += 1
@@ -32,6 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     fun updateText(resultNumber: Int) {
         numberTextView.text = resultNumber.toString()
+        keywordTextView.text = keywords[resultNumber]
 
         when {
             resultNumber % 15 == 0 -> numberTextView.setTextColor(Color.RED)
