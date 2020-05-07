@@ -35,12 +35,13 @@
 
     <Button
         android:id="@+id/plusButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
         android:background="@color/colorPrimary"
-        android:paddingStart="90dp"
+        android:maxWidth="20dp"
         android:paddingTop="10dp"
-        android:paddingEnd="90dp"
         android:paddingBottom="10dp"
         android:text="+"
         android:textColor="@android:color/white"
@@ -52,12 +53,12 @@
 
     <Button
         android:id="@+id/minusButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
         android:background="@color/colorAccent"
-        android:paddingStart="90dp"
         android:paddingTop="10dp"
-        android:paddingEnd="90dp"
         android:paddingBottom="10dp"
         android:text="-"
         android:textColor="@android:color/white"
@@ -69,12 +70,12 @@
 
     <Button
         android:id="@+id/clearButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
         android:background="@android:color/darker_gray"
-        android:paddingStart="90dp"
         android:paddingTop="10dp"
-        android:paddingEnd="90dp"
         android:paddingBottom="10dp"
         android:text="clear"
         android:textColor="@android:color/white"
