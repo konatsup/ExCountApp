@@ -1,3 +1,4 @@
+
 # カウントアプリ拡張
 
 ベースアプリ
@@ -5,6 +6,9 @@
 - プラスボタン
 - マイナスボタン
 - クリアボタン
+
+<img alt="スクリーンショット 2021-02-04 23 18 21" src="https://user-images.githubusercontent.com/25949472/106905424-a001b880-673f-11eb-90d4-5885b7316d24.png">
+
 
 ## 機能拡張
 
@@ -16,11 +20,16 @@
    3. 15→red
 2. when 文(if のリファクタ)
 
+<img alt="スクリーンショット 2021-02-04 23 18 31" src="https://user-images.githubusercontent.com/25949472/106905421-9f692200-673f-11eb-9a07-e12c4f1ee401.png">
+
+
 ### 2.配列(&リスト)
 
 1. キーワードの配列で index を increment していって、キーワードが変わる
 2. 配列外アクセスに対する例外処理を入れる
    - ”その番号のキーワードは存在しません”を setText する
+
+<img alt="スクリーンショット 2021-02-04 23 18 46" src="https://user-images.githubusercontent.com/25949472/106905419-9ed08b80-673f-11eb-992c-1a7aae017c1f.png">
 
 ### 3.レイアウト
 
@@ -47,6 +56,8 @@
 
 4. Button の余白のリファクタ(文字量によって横幅が変わってしまう問題)
    1. 左右に余白をつける(margin: 100dp, layout_width: match_parent)
+
+<img alt="スクリーンショット 2021-02-04 23 18 59" src="https://user-images.githubusercontent.com/25949472/106905405-9aa46e00-673f-11eb-9fe4-eae171c932b5.png">
 
 ## レイアウト例
 
